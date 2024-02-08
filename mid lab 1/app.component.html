@@ -1,0 +1,59 @@
+<h2>Ortiz, Matthew Ariel A.</h2>
+<p>Unformatted: {{presentDate}}</p>
+<p>Default: {{presentDate | date | uppercase}}</p>
+<p>Short Date: {{presentDate | date: 'shortDate' }}</p>
+<p>Medium Date: {{presentDate | date: 'mediumDate' }}</p>
+<p>Long Date: {{presentDate | date: 'longDate' }}</p>
+
+<hr />
+
+<h2>Dates with parameters</h2>
+<p>dd/mm/yyyy: {{presentDate | date:'d/MM/y' }}</p>
+
+<hr />
+<h2>Formatting Time</h2>
+<p>Standard time: {{presentDate | date: 'shortTime'}}</p>
+<p>Medium time : {{presentDate |date:'mediumTime'}}</p>
+<p>Long time : {{presentDate |date:'longTime'}}</p>
+
+<hr />
+<div>
+  Seconds changing in Time: {{time$ | async | date: 'mediumTime'}}
+</div>
+
+<hr />
+<h2>Slice Pipe</h2>
+<div>
+  <h3>Start index:-{{Fruits | slice:2}}</h3>
+  <h4>Start and end index:- {{Fruits | slice:1:4}}</h4>
+  <h5>Negative index:- {{Fruits | slice:-2}}</h5>
+  <h6>Negative start and end index:- {{Fruits | slice:-4:-2}}</h6>
+</div>
+<hr />
+<h2>Currency Pipe</h2>
+<p>{{ price | currency:'':true}}</p>
+<p>{{ price | currency: 'INR' }}</p>
+<p>{{ price | currency: 'PHP' }}</p>
+<hr />
+<h2>Decimal Pipe</h2>
+<div style = "text-align:center">
+  <h3>Decimal Pipe</h3>
+  <p>{{decimalNum1 | number}}</p>
+  <p>{{decimalNum2 | number}}</p>
+  <p>{{decimalNum3 | number}}</p>
+</div>
+<hr />
+<h2>Percentage Pipe</h2>
+<div>
+  <!--output '26%'-->
+  <p>A: {{ a | percent }}</p>
+
+  <!--output '0,134.950%'-->
+  <p>B: {{ b | percent: '4.3-5' }}</p>
+
+  <!--output '0 134,950 %'-->
+  <p>C: {{ b | percent: '4.3-5' : 'fr' }}</p>
+</div>
+<hr />
+<h2>JSON PIPE</h2>
+<p>Object: {{data | json}}</p>

@@ -1,0 +1,70 @@
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Headings */
+  h2 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Horizontal rule */
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Div container */
+  .container div {
+    margin-bottom: 20px;
+  }
+  
+  /* Headers inside div container */
+  .container div h3,
+  .container div h4,
+  .container div h5,
+  .container div h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  /* Aligning content to center */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Adding some color */
+  .container {
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  hr {
+    border-color: #ccc;
+  }
+  
+  .container div h3,
+  .container div h4,
+  .container div h5,
+  .container div h6 {
+    color: #555;
+  }
+  
